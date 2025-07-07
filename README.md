@@ -1,8 +1,11 @@
 # Nodoj
 
-*Nodoj* — meaning “nodes” in Esperanto — is a lightweight JavaScript library to create and manipulate DOM nodes declaratively, without boilerplate or dependencies. It gives you low-level control using simple object syntax and focuses on minimalism and efficiency.
+![npm](https://img.shields.io/npm/v/nodoj)
+![minified size](https://img.shields.io/bundlephobia/min/nodoj)
+![license](https://img.shields.io/github/license/Gribiligiwi/nodoj)
 
----
+
+*Nodoj* — meaning “nodes” in Esperanto — is a lightweight JavaScript library to create and manipulate DOM nodes declaratively, without boilerplate or dependencies. It gives you low-level control using simple object syntax and focuses on minimalism and efficiency.
 
 ## Features
 
@@ -13,8 +16,6 @@
 - Support for namespaced elements (SVG, MathML, custom)
 - Optional comment and text nodes
 - Designed for native JavaScript and zero dependencies
-
----
 
 ## Installation
 
@@ -38,10 +39,12 @@ import nodoj from 'nodoj'
 // or: import nodoj from 'nodoj/min'
 ```
 
-Or use it in the browser, but remove 'export default...' line in this case:
+Or use it directly in the browser. In this case, remove the last line `export default nodoj` from the nodoj JS file:
 ```html
 <script src="nodoj.js"></script>
 ```
+
+Note: Nodoj is an ES module (ESM). It must be imported using `import`. CommonJS (`require`) is not supported.
 
 ## Usage
 
@@ -88,6 +91,8 @@ nodoj.start([
 
 nodoj.k.main.innerHTML += ' <b>World</b>'
 ```
+
+Keys are just direct references. There's no automatic update or reactivity.
 
 ## Example (Todo list)
 

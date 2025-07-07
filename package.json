@@ -1,7 +1,7 @@
 {
   "name": "nodoj",
   "version": "1.0.0",
-  "description": "Minimal DOM builder with keyed elements",
+  "description": "Lightweight JavaScript library to create and manipulate DOM nodes",
   "main": "nodoj.js",
   "exports": {
     ".": "./nodoj.js",
@@ -15,8 +15,29 @@
     "builder",
     "manipulation",
     "vanilla",
-    "lightweight"
+    "lightweight",
+    "elements",
+    "declarative",
+    "no-dependencies",
+    "frontend",
+    "web",
+    "component",
+    "javascript",
+    "insert",
+    "remove",
+    "nodes"
   ],
-  "author": "Silène",
-  "license": "MIT"
+  "author": "Silène (Gribiligiwi Studio)",
+  "license": "MIT",
+  "files": [
+    "nodoj.js",
+    "nodoj.min.js",
+    "nodoj.dev.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gribiligiwi/nodoj.git"
+  }
 }
