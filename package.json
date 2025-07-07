@@ -38,6 +38,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gribiligiwi/nodoj.git"
+    "url": "git+https://github.com/Gribiligiwi/nodoj.git"
   }
 }
