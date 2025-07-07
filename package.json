@@ -1,0 +1,22 @@
+{
+  "name": "nodoj",
+  "version": "1.0.0",
+  "description": "Minimal DOM builder with keyed elements",
+  "main": "nodoj.js",
+  "exports": {
+    ".": "./nodoj.js",
+    "./dev": "./nodoj.dev.js",
+    "./min": "./nodoj.min.js"
+  },
+  "type": "module",
+  "keywords": [
+    "dom",
+    "minimal",
+    "builder",
+    "manipulation",
+    "vanilla",
+    "lightweight"
+  ],
+  "author": "Silène",
+  "license": "MIT"
+}
