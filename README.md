@@ -195,7 +195,7 @@ setContent()
 
 Nodoj gives you control of the DOM without overhead. No virtual DOM, no reactivity, no abstraction layers — just straightforward node generation. It embraces declarative syntax but remains close to the native DOM.
 
-## Licence
+## License
 
 MIT — see [opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
 
