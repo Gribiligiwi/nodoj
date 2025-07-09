@@ -24,7 +24,9 @@ Three interchangeable builds are provided:
 - **`nodoj.js`** (3.6 KB) — with error handling, no inline docs. Good middle-ground.
 - **`nodoj.min.js`** (**1.4 KB**) — minified and stripped for production use.
 
-You can install Nodoj via npm:
+### Using with a bundler (Node / npm / Vite / Rollup)
+
+Install via npm:
 
 ```bash
 npm install nodoj
@@ -38,12 +40,35 @@ import nodoj from 'nodoj'
 // or: import nodoj from 'nodoj/min'
 ```
 
-Or use it directly in the browser. In this case, remove the last line `export default nodoj` from the nodoj JS file:
+Nodoj is an ES module (ESM). It must be imported using `import`. CommonJS (`require`) is not supported.
+
+### Using directly in the browser (without bundler)
+
+You can also use Nodoj directly in the browser:
+
 ```html
-<script src="nodoj.js"></script>
+<script type="module">
+  import nodoj from './node_modules/nodoj/nodoj.min.js'
+  // or: './nodoj.js', './nodoj.dev.js', depending on what you need
+  // use nodoj here...
+</script>
 ```
 
-Note: Nodoj is an ES module (ESM). It must be imported using `import`. CommonJS (`require`) is not supported.
+Alternatively, you can use an import map to simplify the import path:
+
+```html
+<script type="importmap">
+{
+  "imports": {
+    "nodoj": "./node_modules/nodoj/nodoj.min.js"
+  }
+}
+</script>
+
+<script type="module">
+  import nodoj from 'nodoj'
+</script>
+```
 
 ## Usage
 
