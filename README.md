@@ -1,7 +1,6 @@
 # Nodoj
 
 ![npm](https://img.shields.io/npm/v/nodoj)
-![minified size](https://img.shields.io/bundlephobia/min/nodoj)
 ![license](https://img.shields.io/github/license/Gribiligiwi/nodoj)
 
 
